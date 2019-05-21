@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Maintoolbar"
+        android:layout_width="396dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#fff"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="95dp"
+        android:layout_height="55dp"
+        android:src="@drawable/actourxhdpi"
+        app:layout_constraintBottom_toBottomOf="@+id/Maintoolbar"
+        app:layout_constraintEnd_toEndOf="@+id/Maintoolbar"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="@+id/Maintoolbar"
+        app:layout_constraintTop_toTopOf="@+id/Maintoolbar"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="627dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Maintoolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_width="395dp"
+                    android:layout_height="27dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/productcourselabel">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="300dp"
+                            android:layout_height="21dp"
+                            android:layout_marginLeft="40dp"
+                            app:srcCompat="@drawable/courselinexxhdpi"
+                            tools:layout_editor_absoluteX="67dp"
+                            tools:layout_editor_absoluteY="663dp" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/productcourselabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="여행코스"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="343dp"
+                    android:layout_height="213dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/sellproductLabelLocal"
+                            android:layout_width="10dp"
+                            android:layout_height="32dp"
+                            android:layout_weight="1"
+                            android:text="여행지역"
+                            android:textColor="#123123"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/sellproductLocalName"
+                            android:layout_width="120dp"
+                            android:layout_height="32dp"
+                            android:layout_weight="2"
+                            android:text="파리"
+                            android:textColor="#123123"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="77dp"
+                        android:layout_marginBottom="2dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/sellproductLabehost"
+                            android:layout_width="10dp"
+                            android:layout_height="32dp"
+                            android:layout_weight="1"
+                            android:text="여행 소개"
+                            android:textColor="#123123"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/sellproductHostText"
+                            android:layout_width="120dp"
+                            android:layout_height="81dp"
+                            android:layout_weight="2"
+                            android:text="환상의 나라 프랑스 그곳의 환상의 미술 체험 파리 예술관"
+                            android:textColor="#123123"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/sellproductLabelinfo"
+                            android:layout_width="10dp"
+                            android:layout_height="32dp"
+                            android:layout_weight="1"
+                            android:text="호스트"
+                            android:textColor="#123123"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/sellproductInfoText"
+                            android:layout_width="120dp"
+                            android:layout_height="32dp"
+                            android:layout_weight="2"
+                            android:text="JJH"
+                            android:textColor="#123123"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/sellproductLabetype"
+                            android:layout_width="10dp"
+                            android:layout_height="32dp"
+                            android:layout_weight="1"
+                            android:text="여행유형"
+                            android:textColor="#123123"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/sellproductTypeText"
+                            android:layout_width="120dp"
+                            android:layout_height="32dp"
+                            android:layout_weight="2"
+                            android:text="모험가형"
+                            android:textColor="#123123"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/sellproductLabelstar"
+                            android:layout_width="10dp"
+                            android:layout_height="32dp"
+                            android:layout_weight="1"
+                            android:text="평점"
+                            android:textColor="#123123"
+                            android:textSize="14dp" />
+
+                        <RatingBar
+                            android:id="@+id/ratingBar"
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:layout_width="46dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:stepSize="4" />
+
+                        <TextView
+                            android:id="@+id/sellproductLabelPrice"
+                            android:layout_width="25dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_weight="2"
+                            android:text="가격"
+                            android:textColor="#123123"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/sellproductPriceText"
+                            android:layout_width="65dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="-20dp"
+                            android:layout_weight="2"
+                            android:text="10,000 원"
+                            android:textColor="#123123"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    style="?android:attr/borderlessButtonStyle"
+                    android:id="@+id/button"
+                    android:layout_width="278dp"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/reservationbuttonxxhdpi"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="420dp"
+                    android:layout_height="208dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/pic1xxhdpi" />
+
+                <TextView
+                    android:id="@+id/productcourReview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="리뷰"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+                <TextView
+                    android:id="@+id/productcourReviewnickname"
+                    android:layout_width="53dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="닉네임"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/productcourReview" />
+
+                <TextView
+                    android:id="@+id/productcourReviewerType"
+                    android:layout_width="75dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="모험가형"
+                    android:textColor="#000"
+                    android:textSize="13dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.003"
+                    app:layout_constraintStart_toEndOf="@+id/productcourReviewnickname"
+                    app:layout_constraintTop_toBottomOf="@+id/productcourReview" />
+
+                <TextView
+                    android:id="@+id/productcourReviewText"
+                    android:layout_width="176dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="유익했어요"
+                    android:textColor="#000"
+                    android:textSize="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.03"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/productcourReviewnickname" />
+
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
