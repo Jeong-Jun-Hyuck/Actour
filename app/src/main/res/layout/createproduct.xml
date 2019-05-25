@@ -17,7 +17,6 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:background="#fff"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,8 +41,8 @@
     <EditText
         android:id="@+id/create_prodcutTitle"
         style="@android:style/Widget.AutoCompleteTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="229dp"
+        android:layout_height="49dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -53,9 +52,9 @@
         android:hint="제목 입력"
         android:inputType="textPersonName"
         android:textAlignment="center"
-        android:textColorHint="#000"
         android:textColor="#000"
-        android:textSize="25dp"
+        android:textColorHint="#000"
+        android:textSize="23dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Maintoolbar" />
@@ -63,7 +62,7 @@
     <EditText
         android:id="@+id/createproductDaySelector"
         android:layout_width="186dp"
-        android:layout_height="48dp"
+        android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -80,31 +79,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/create_prodcutTitle" />
 
-    <EditText
-        android:id="@+id/createProduct_Nation_localSelector"
-        android:layout_width="123dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:ems="10"
-        android:hint="나라-지역"
-        android:inputType="textPersonName"
-        android:text="나라-지역"
-        android:textAlignment="center"
-        android:textColor="#000"
-        android:textColorHint="#000"
-        android:textSize="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.97"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/createproductDaySelector" />
-
     <ScrollView
         android:id="@+id/scrollView4"
         android:layout_width="395dp"
-        android:layout_height="354dp"
+        android:layout_height="390dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -113,10 +91,10 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/createProduct_Nation_localSelector"
-        app:layout_constraintVertical_bias="0.037">
+        app:layout_constraintTop_toBottomOf="@+id/createProductnationselector"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -134,7 +112,9 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
+                android:layout_marginBottom="10dp"
                 android:orientation="vertical"
+                android:paddingBottom="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.51"
                 app:layout_constraintStart_toStartOf="parent"
@@ -152,11 +132,11 @@
                         android:layout_height="38dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginLeft="8dp"
-                        android:layout_marginTop="24dp"
+                        android:layout_marginTop="12dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginRight="8dp"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.023"
+                        app:layout_constraintHorizontal_bias="0.024"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@drawable/dot_iconxxhdpi" />
@@ -167,13 +147,12 @@
                         android:layout_height="37dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginLeft="8dp"
-                        android:layout_marginTop="24dp"
+                        android:layout_marginTop="16dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginRight="8dp"
                         android:hint="코스 입력"
-                        android:text="코스 입력"
                         android:textColor="#000"
-                        android:textColorHint="#000"
+                        android:textColorHint="#999"
                         android:textSize="15dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
@@ -187,34 +166,111 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
+                        android:background="@drawable/border"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.451"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView2"
                         app:layout_constraintVertical_bias="0.0"
-                        app:srcCompat="@drawable/backgoundcolor" />
+                        app:srcCompat="@drawable/backimage_unknonwn" />
 
                     <EditText
-                        android:id="@+id/textView3"
+                        android:id="@+id/productDetails"
                         android:layout_width="337dp"
                         android:layout_height="41dp"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/border"
+                        android:hint="상품 상세 입력"
+                        android:outlineSpotShadowColor="#000"
+                        android:textColor="#000"
+                        android:textColorHint="#999"
+                        android:textSize="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/createProduct_pic1" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout3"
+                        android:layout_width="337dp"
+                        android:layout_height="36dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginRight="8dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/productDetails">
+
+                        <ImageView
+                            android:id="@+id/imageView18"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/time_iconxxhdpi" />
+
+                        <EditText
+                            android:id="@+id/productTime"
+                            android:layout_width="25dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="-20dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:hint="소요시간"
+                            android:textColor="#000"
+                            android:textColorHint="#999"
+                            android:textSize="13dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView19"
+                            android:layout_width="7dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/price_iconxxhdpi" />
+
+                        <EditText
+                            android:id="@+id/productPrice"
+                            android:layout_width="126dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:hint="가격/금액"
+                            android:textColor="#000"
+                            android:textColorHint="#999"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/productCaution"
+                        android:layout_width="330dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="11dp"
+                        android:layout_marginRight="11dp"
                         android:layout_marginBottom="8dp"
-                        android:outlineSpotShadowColor="#000"
-                        android:text="설명"
+                        android:background="@drawable/border"
+                        android:hint="주의사항 입력"
+                        android:paddingBottom="5dp"
                         android:textColor="#000"
-                        android:textSize="15dp"
+                        android:textColorHint="#999"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.733"
+                        app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/createProduct_pic1"
-                        app:layout_constraintVertical_bias="1.0" />
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
                 </android.support.constraint.ConstraintLayout>
 
@@ -235,8 +291,62 @@
                 app:layout_constraintHorizontal_bias="0.789"
                 app:layout_constraintStart_toStartOf="parent" />
 
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="378dp"
+                android:layout_height="200dp"
+                app:srcCompat="@android:color/background_light" />
+
         </LinearLayout>
     </ScrollView>
+
+    <Button
+        android:id="@+id/createProduct_confirmButton"
+        android:layout_width="242dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/next_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView4"
+        app:layout_constraintVertical_bias="0.158" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="240dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/createproductDaySelector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bottomborder" />
+
+    <Spinner
+        android:id="@+id/createProductnationselector"
+        style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+        android:layout_width="137dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/create_prodcutTitle" />
 
 
 </android.support.constraint.ConstraintLayout>

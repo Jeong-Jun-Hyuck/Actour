@@ -27,6 +27,16 @@ public class Profiles extends AppCompatActivity {
                 Profiles.this.startActivity(main2);
             }
         }));
+
+        //내 로그 이동
+        Button goToMyLogButton = findViewById(R.id.profile_LogButton2);
+        goToMyLogButton.setOnClickListener((new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent main2 = new Intent(Profiles.this,myLog.class);
+                Profiles.this.startActivity(main2);
+            }
+        }));
     }
 
     @Override

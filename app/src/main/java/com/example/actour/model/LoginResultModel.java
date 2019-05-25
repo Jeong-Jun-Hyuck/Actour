@@ -5,13 +5,13 @@ public class LoginResultModel {
     private boolean result;
     private  String message;
     private  String id;
-    private int SystemId;
+    private int systemId;
 
     public LoginResultModel(boolean result, String message, String id, int systemId) {
         this.result = result;
         this.message = message;
         this.id = id;
-        SystemId = systemId;
+        this.systemId = systemId;
     }
 
     public boolean isResult() {
@@ -39,10 +39,10 @@ public class LoginResultModel {
     }
 
     public int getSystemId() {
-        return SystemId;
+        return systemId;
     }
 
     public void setSystemId(int systemId) {
-        SystemId = systemId;
+        this.systemId = systemId;
     }
 }

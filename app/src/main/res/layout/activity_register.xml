@@ -256,7 +256,7 @@
                         <EditText
                             android:id="@+id/reg_Age"
                             android:layout_width="283dp"
-                            android:layout_height="43dp"
+                            android:layout_height="42dp"
                             android:layout_marginStart="8dp"
                             android:layout_marginLeft="8dp"
                             android:layout_marginTop="8dp"

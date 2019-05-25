@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.actour.model.LoginResultModel;
+import com.example.actour.model.LoginSession;
 import com.example.actour.model.UserForLogin;
 import com.example.actour.trans.ApiService;
 
@@ -46,6 +47,7 @@ public class LoginActivity extends AppCompatActivity {
                         public void onResponse(Call<LoginResultModel> call, retrofit2.Response<LoginResultModel> response) {
                             LoginResultModel result = response.body();
                             if(result.isResult()){
+                                LoginSession.setLoginId(result.getSystemId());
                                 Toast.makeText(LoginActivity.this,"로그인 성공",Toast.LENGTH_SHORT).show();
                                 Intent main2Intent = new Intent(LoginActivity.this,Main2Activity.class);
                                 LoginActivity.this.startActivity(main2Intent);

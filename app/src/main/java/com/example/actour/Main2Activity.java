@@ -1,7 +1,10 @@
 package com.example.actour;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -12,27 +15,20 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
+
+import javax.xml.transform.URIResolver;
 
 import me.relex.circleindicator.CircleIndicator;
 
 public class Main2Activity extends AppCompatActivity {
-    FragmentPagerAdapter adapterViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-
-        //슬라이더
-        ViewPager vpPager = (ViewPager) findViewById(R.id.main2_view);
-        adapterViewPager = new MainActivity.MyPagerAdapter(getSupportFragmentManager());
-        vpPager.setAdapter(adapterViewPager);
-        vpPager.setClipToPadding(false);
-        vpPager.setPadding(100, 0, 40, 0);
-        CircleIndicator indicator = (CircleIndicator) findViewById(R.id.indicator);
-        indicator.setViewPager(vpPager);
 
         Toolbar tb = findViewById(R.id.Maintoolbar);
         setSupportActionBar(tb);
@@ -63,35 +59,7 @@ public class Main2Activity extends AppCompatActivity {
     }
 
 
-    public static class MyPagerAdapter extends FragmentPagerAdapter {
-        private static int NUM_ITEMS = 3;
 
-        public MyPagerAdapter(FragmentManager fragmentManager) {
-            super(fragmentManager);
-        }
-
-        // Returns total number of pages
-        @Override
-        public int getCount() {
-            return NUM_ITEMS;
-        }
-
-        // Returns the fragment to display for that page
-        @Override
-        public Fragment getItem(int position) {
-            switch (position) {
-                case 0:
-
-                    return FirstmainPic.newInstance(0, "Page # 1");
-                case 1:
-                    return secondmainPic.newInstance(1, "Page # 2");
-                case 2:
-                    return thirdmainPic.newInstance(2, "Page # 3");
-                default:
-                    return null;
-            }
-        }
-    }
 
 }
 

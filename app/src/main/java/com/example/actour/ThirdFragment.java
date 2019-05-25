@@ -36,8 +36,6 @@ public class ThirdFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_third, container, false);
-        EditText tvLabel = view.findViewById(R.id.editText);
-        tvLabel.setText(page + " -- " + title);
         return view;
     }
 }
